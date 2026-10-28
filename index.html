@@ -4,16 +4,18 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Double Reality</title>
+    <link rel="icon" type="image/png" href="logo.png">
     <style>
         body {
             font-family: Arial, sans-serif;
-            background: #0d1117;
+            background: #2b2b2b;
             color: #ffffff;
             text-align: center;
             padding: 80px 20px;
         }
-        h1 {
-            font-size: 2.5em;
+        .logo {
+            max-width: 280px;
+            width: 80%;
             margin-bottom: 10px;
         }
         p {
@@ -66,10 +68,26 @@
         .rustore:hover {
             background: #7c52ff;
         }
+        @media (max-width: 480px) {
+            body {
+                padding: 50px 15px;
+            }
+            .logo {
+                max-width: 220px;
+            }
+            p {
+                font-size: 1em;
+            }
+            .btn {
+                width: 100%;
+                max-width: 280px;
+                font-size: 1em;
+            }
+        }
     </style>
 </head>
 <body>
-    <h1>Double Reality</h1>
+    <img src="logo.png" alt="Double Reality" class="logo">
     <p>Разработчик мобильных приложений</p>
     <div class="buttons">
         <a href="https://play.google.com/store/apps/developer?id=Double+Reality" class="btn google-play" target="_blank">
